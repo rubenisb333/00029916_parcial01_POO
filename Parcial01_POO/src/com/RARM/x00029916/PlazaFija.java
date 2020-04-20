@@ -2,6 +2,7 @@ package com.RARM.x00029916;
 
 import java.io.IOException;
 
+
 public class PlazaFija extends Empleado {
 
     public PlazaFija(String nombre, String puesto, Double salario) {
