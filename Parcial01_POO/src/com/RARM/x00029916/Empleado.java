@@ -20,4 +20,17 @@ public abstract class Empleado {
                 throw new IllegalArgumentException("No puede haber salario negativo");
             this.salario = salario;
 
-        }c
+        }catch (IllegalArgumentException e){
+            System.err.println(e.getLocalizedMessage());
+        }
+    }
+
+    public abstract String getNombre();
+
+    public abstract String getPuesto();
+
+    public  abstract Double getSalario();
+
+    public abstract void setSalario(Double sal);
+}
+

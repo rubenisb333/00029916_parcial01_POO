@@ -2,6 +2,7 @@ package com.RARM.x00029916;
 
 import java.io.IOException;
 
+
 public class ServicioProfesional extends Empleado {
 
     private Integer mesesContrato;
@@ -17,6 +18,15 @@ public class ServicioProfesional extends Empleado {
         }
     }
 
+    @Override
+    public String getNombre() {
+        return null;
+    }
+
+    @Override
+    public String getPuesto() {
+        return null;
+    }
 
     @Override
     public Double getSalario() {

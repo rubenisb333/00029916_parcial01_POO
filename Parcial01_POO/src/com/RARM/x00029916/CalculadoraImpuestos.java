@@ -56,4 +56,17 @@ public class CalculadoraImpuestos {
         }
 
     }
-    pu
+    public static String mostrarTotales(){
+
+        return "Total AFP: $"+
+                new BigDecimal(totalAFP).setScale(2, RoundingMode.HALF_UP)+
+                "\nTotal ISSS: $"
+                + new BigDecimal(totalISSS).setScale(2, RoundingMode.HALF_UP)+
+                "\nTotal Renta: $"
+                + new BigDecimal(totalRenta).setScale(2, RoundingMode.HALF_UP);
+    }
+
+
+
+}
+
